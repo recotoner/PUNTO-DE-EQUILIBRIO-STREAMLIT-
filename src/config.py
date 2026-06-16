@@ -1,0 +1,43 @@
+"""Central configuration for validation rules."""
+
+N8N_PE_WEBHOOK_URL = "https://henry0101.app.n8n.cloud/webhook/f1469a6c-514f-49c9-9126-4a3049bbc6ad"
+
+SALES_RECONCILIATION_TOLERANCE = 0.03
+COST_RECONCILIATION_TOLERANCE = 0.10
+MIN_NON_ZERO_COST_COVERAGE = 0.50
+RELEVANT_PRODUCT_SALES_SHARE = 0.01
+
+ZERO_COST_SERVICE_KEYWORDS = (
+    "DESPACHO",
+    "ENVIO",
+    "FLETE",
+    "SERVICIO",
+    "RECARGO",
+    "TRANSPORTE",
+    "INSTALACION",
+    "MANO DE OBRA",
+    "COMISION",
+)
+
+ZERO_COST_ADJUSTMENT_KEYWORDS = (
+    "NOTA DE CREDITO",
+    "NOTA CREDITO",
+    "AJUSTE",
+    "ANULACION",
+    "DEVOLUCION",
+)
+
+EERR_REQUIRED_LABELS = (
+    "TOTAL INGRESOS DE EXPLOTACION",
+    "TOTAL COSTOS DE EXPLOTACION",
+)
+
+VENTAS_REQUIRED_COLUMNS = (
+    "Fecha",
+    "Total Linea",
+)
+
+VENTAS_COST_COLUMNS = (
+    "Costo Venta Unitario",
+    "Costo Venta Total",
+)
